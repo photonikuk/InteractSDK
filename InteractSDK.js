@@ -40,12 +40,12 @@ show_buttons = function(){
 
 var sdk = { 
     session_id: '123',
-    interact_instance: 'interact.ibmxone.com:7001',
+    interact_instance: 'unicavmdemo:7001',
     audience: 'Individual',
     audience_key: 'Indiv_Id',
-    audience_value: '1',
+    audience_value: '444',
     audience_type: 'numeric', 
-    interactive_channel: '',
+    interactive_channel: 'Towne Bank Website Channel',
     rely_on_existing_session: false,
     param_type: null,
     param_value: null,
@@ -81,7 +81,7 @@ var sdk = {
     },
     number_of_offers: 1,
     offer_attribute: "OfferURL",
-    interaction_point: "default",
+    interaction_point: "AccountsPageOffers",
     get get_offers_json(){
         return `{
             "sessionId": "` + this.session_id + `",
